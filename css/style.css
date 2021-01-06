@@ -9,14 +9,26 @@
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
+
   font-family: Montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
+
+/* Logo */
 .logo {
   color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
+  text-decoration: none;
+  font-size: 28px;
+  line-height: 1.14;
 }
 .logo:hover {
   color: var(--accent-color);
 }
+
+/* Сброс */
 .list {
   list-style: none;
 }
@@ -25,6 +37,10 @@ body {
 .site-nav .link {
   text-decoration: none;
   color: var(--accent-color);
+
+  font-size: 15px;
+  line-height: 1.2px;
+  font-weight: 500;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -37,27 +53,49 @@ body {
 /* Hero */
 .hero-title {
   color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
 }
 
 /* Section title */
 .section-title {
   color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* Section subtitle */
 .section-subtitle {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 /* section text */
 .section-text {
-  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.39;
+  text-align: center;
 }
 
 /* Button */
 .button {
   color: var(--title-text-color);
   background-color: var(--white-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+
+  font-family: inherit;
 }
 .button.primary {
   color: var(--white-color);
@@ -66,4 +104,9 @@ body {
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--white-color);
+}
+
+/* 2 секции заголовок и текст в лево */
+.left {
+  text-align: left;
 }
