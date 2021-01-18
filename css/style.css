@@ -112,20 +112,28 @@ body {
 
 /* Button */
 .button {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 135px;
+
   color: var(--title-text-color);
   background-color: var(--white-color);
 
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
+  text-align: center;
 }
 .button.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
+  border: 1px solid transparent;
 }
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--white-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* 2 секции заголовок и текст в лево */
