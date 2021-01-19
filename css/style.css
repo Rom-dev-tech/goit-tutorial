@@ -12,6 +12,7 @@ html {
   --title-text-color: #000000;
   --accent-color: #18a0fb;
   --white-color: #ffffff;
+  --bgc-color: #e5e5e5;
 }
 
 body {
@@ -29,7 +30,16 @@ body {
   padding-right: 20px;
   margin: 0 auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* background-color: green; */
+}
+.description {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Logo */
@@ -47,6 +57,8 @@ body {
 /* Сброс */
 .list {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Site nav */
@@ -75,17 +87,36 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: var(--bgc-color);
+}
 .hero-title {
+  margin-bottom: 0;
+  margin-top: 0;
+
   color: var(--title-text-color);
 
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
+}
+.center {
   text-align: center;
+}
+
+.examples {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.examples-item:nth-child(even) {
+  background-color: var(--bgc-color);
 }
 
 /* Section title */
 .section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
 
   font-weight: 400;
@@ -96,6 +127,9 @@ body {
 
 /* Section subtitle */
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -105,9 +139,15 @@ body {
 
 /* section text */
 .section-text {
+  margin-bottom: 0;
+  margin-top: 0;
+
   font-size: 36px;
   line-height: 1.39;
   text-align: center;
+}
+.signup {
+  background-color: var(--bgc-color);
 }
 
 /* Button */
