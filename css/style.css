@@ -1,12 +1,32 @@
-html {
-  box-sizing: border-box;
+/*=======RESET=======*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
-/* вторичный цвет фона #E5E5E5; */
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/*=======END RESET=======*/
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
@@ -41,27 +61,34 @@ body {
   margin-bottom: 0;
   margin-top: 0;
 }
+.border {
+  border-bottom: 1px solid var(--accent-color);
+}
 
-/* Logo */
+/*=======HEADER=======*/
 .logo {
   color: var(--title-text-color);
   font-family: Comfortaa, cursive;
   text-decoration: none;
   font-size: 28px;
   line-height: 1.14;
+
+  margin-right: 70px;
+  padding: 14px 0;
 }
 .logo:hover {
   color: var(--accent-color);
 }
 
-/* Сброс */
-.list {
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 /* Site nav */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
 .site-nav .link {
   text-decoration: none;
   color: var(--accent-color);
@@ -77,14 +104,24 @@ body {
 .site-nav .link.current {
   color: var(--title-text-color);
 }
+.nav-item {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
 .site-nav {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
 }
 .auth-nav {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
 }
+.auth-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+/*=======END HEADER=======*/
 
 /* Hero */
 .hero {
