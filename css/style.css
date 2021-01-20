@@ -74,7 +74,6 @@ body {
   line-height: 1.14;
 
   margin-right: 70px;
-  padding: 14px 0;
 }
 .logo:hover {
   color: var(--accent-color);
@@ -84,7 +83,6 @@ body {
 .flex-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -116,6 +114,7 @@ body {
 }
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 .auth-item:not(:last-child) {
   margin-right: 12px;
