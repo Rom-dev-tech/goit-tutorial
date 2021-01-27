@@ -30,12 +30,33 @@ a {
 }
 /*=======END RESET=======*/
 
+.main-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 15px;
+
+  max-width: 150px;
+  border-radius: 4px;
+}
+.main-link:hover,
+.main-link:focus {
+  background-color: tomato;
+  outline: none;
+}
+
 /*=======FLEX-1=======*/
 /* Вариант железно бетонный, но когда нет фона */
+.flex-1 {
+  padding: 50px 0px;
+  background-color: teal;
+}
 .main-title {
   text-align: center;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 50px;
   color: #ffffff;
   font-style: italic;
   text-decoration: underline;
@@ -44,9 +65,6 @@ a {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
-.flex-1 .container {
-  background-color: teal;
 }
 .flex-container {
   display: flex;
@@ -61,6 +79,8 @@ a {
   padding: 5px;
   text-align: center;
   margin: 15px;
+
+  border-radius: 5px;
 }
 
 /* вариант 1 */
@@ -112,3 +132,71 @@ a {
   margin-bottom: 0;
 } */
 /*=======END FLEX-1=======*/
+
+/*=======Переменные для карточек=======*/
+:root {
+  --page-bg-color: #cccccc;
+  --primary-text-color: #212121;
+  --card-set-gap: 20px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  background-color: var(--page-bg-color);
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+/*=======FLEX-CARDS=======*/
+.flex-cards {
+  padding: 50px 0px;
+  background-color: var(--page-bg-color);
+}
+
+/* CARDS-SET */
+.card-set {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+/* END CARDS-SET */
+
+/* CARD */
+.card-thumb > img {
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 10px;
+}
+.flex-card-title {
+  padding-bottom: 50px;
+  text-align: center;
+  color: teal;
+  font-style: italic;
+  text-decoration: underline;
+}
+.card-heading {
+  margin-bottom: 15px;
+}
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* END CARD */
+
+/*=======END FLEX-CARDS=======*/
