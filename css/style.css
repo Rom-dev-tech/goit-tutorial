@@ -19,6 +19,10 @@ img {
   display: block;
 }
 
+a {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
