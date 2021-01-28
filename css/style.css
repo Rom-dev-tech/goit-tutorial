@@ -305,8 +305,23 @@ body {
 /*=======END TESTIMONIAL=======*/
 
 /*=======SIGNUP=======*/
+.signup .container {
+  display: flex;
+  align-items: center;
+}
+.signup-list {
+  display: flex;
+}
 .signup {
   background-color: var(--bgc-color);
+}
+.signup .section-text {
+  text-align: start;
+  max-width: 945px;
+  margin-right: 20px;
+}
+.signup .button.primary {
+  margin-right: 30px;
 }
 /*=======END SIGNUP=======*/
 
