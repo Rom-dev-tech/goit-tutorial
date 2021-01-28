@@ -31,7 +31,7 @@ a {
 /*=======END RESET=======*/
 
 .main-link {
-  color: #ffffff;
+  color: teal;
   text-decoration: none;
   text-align: center;
 
@@ -45,6 +45,7 @@ a {
 .main-link:hover,
 .main-link:focus {
   background-color: tomato;
+  color: white;
   outline: none;
 }
 
