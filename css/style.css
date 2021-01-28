@@ -273,6 +273,7 @@ body {
 }
 .examples-img {
   margin-right: 84px;
+  max-width: 100%;
 }
 .examples.section-subtitle {
   margin-bottom: 24px;
