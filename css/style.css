@@ -51,7 +51,7 @@ body {
 
 /*=======COMPONENT=======*/
 .container {
-  width: 1240px;
+  width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -110,9 +110,6 @@ body {
   color: var(--accent-color);
   background-color: var(--white-color);
   border: 1px solid var(--accent-color);
-}
-.center {
-  text-align: center;
 }
 /*=======END COMPONENT=======*/
 
@@ -180,18 +177,41 @@ body {
 /*=======END HEADER=======*/
 
 /*=======HERO=======*/
+.hero .container {
+  width: 1440px;
+  height: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 632px;
+}
 .hero {
-  background-color: var(--bgc-color);
+  max-width: 1600px;
+  height: 960px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-title {
-  margin-bottom: 0;
-  margin-top: 0;
-
   color: var(--title-text-color);
 
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
+
+  margin-bottom: 40px;
+}
+.hero .button {
+  min-width: 192px;
+  height: 52px;
 }
 /*=======END HERO=======*/
 
