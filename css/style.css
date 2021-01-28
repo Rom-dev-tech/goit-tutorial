@@ -89,8 +89,9 @@ body {
 .button {
   display: inline-block;
   border-radius: 6px;
-  padding: 11px 34px;
-  min-width: 135px;
+  padding: 11px 30px;
+  min-width: 130px;
+  height: 40px;
 
   color: var(--title-text-color);
   background-color: var(--white-color);
@@ -119,13 +120,13 @@ body {
 .logo {
   color: var(--title-text-color);
   font-family: Comfortaa, cursive;
-  text-decoration: none;
   font-size: 28px;
   line-height: 1.14;
 
   margin-right: 70px;
 }
-.logo:hover {
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
 
@@ -136,25 +137,32 @@ body {
 }
 .navigation {
   display: flex;
+  align-items: center;
 }
-.site-nav .link {
-  text-decoration: none;
+.logo {
+  display: flex;
+  align-items: center;
+
+  padding: 14px 0;
+}
+.logo-img {
+  margin-right: 12px;
+}
+.nav-link {
   color: var(--accent-color);
 
   font-size: 15px;
   line-height: 1.2px;
   font-weight: 500;
+
+  padding: 21px 0;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--title-text-color);
 }
-.site-nav .link.current {
+.nav-link.link.current {
   color: var(--title-text-color);
-}
-.nav-item {
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 .nav-item:not(:last-child) {
   margin-right: 40px;
