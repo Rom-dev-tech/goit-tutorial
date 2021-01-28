@@ -59,7 +59,6 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-  /* background-color: green; */
 }
 /* Section title */
 .section-title {
@@ -214,6 +213,38 @@ body {
   height: 52px;
 }
 /*=======END HERO=======*/
+
+/*=======QUOTES=======*/
+.quotes-title-container {
+  max-width: 750px;
+  height: 144px;
+  margin-bottom: 60px;
+}
+.quotes .section-title {
+  text-align: start;
+}
+.quotes-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-right: -148px;
+  margin-bottom: -60px;
+}
+.quotes-item {
+  flex-basis: calc(100% / 2 - 148px);
+  margin-right: 148px;
+  margin-bottom: 60px;
+
+  outline: 1px solid tomato;
+}
+.quotes .section-subtitle {
+  margin-bottom: 20px;
+}
+.quotes .description {
+  margin-bottom: 32px;
+}
+/*=======END QUOTES=======*/
 
 /*=======EXAMPLES=======*/
 .examples {
