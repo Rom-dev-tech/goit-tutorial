@@ -257,6 +257,8 @@ body {
 /*=======EXAMPLES=======*/
 .examples {
   padding-top: 80px;
+
+  background-color: var(--bgc-color);
 }
 .examples-item {
   display: flex;
@@ -272,10 +274,35 @@ body {
 .examples-img {
   margin-right: 84px;
 }
-.examples .section-subtitle {
+.examples.section-subtitle {
   margin-bottom: 24px;
 }
 /*=======END EXAMPLES=======*/
+
+/*=======TESTIMONIAL=======*/
+.testimonial .section-title {
+  margin-bottom: 30px;
+}
+.testimonial .section-text {
+  margin-bottom: 80px;
+}
+.test {
+  margin: 0 auto;
+  max-width: 945px;
+}
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -84px;
+  margin-bottom: -64px;
+}
+.testimonial-item {
+  flex-basis: calc(100% / 4 - 84px);
+  margin-right: 84px;
+  margin-bottom: 64px;
+}
+/*=======END TESTIMONIAL=======*/
 
 /*=======SIGNUP=======*/
 .signup {
