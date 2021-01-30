@@ -201,3 +201,153 @@ body {
 /* END CARD */
 
 /*=======END FLEX-CARDS=======*/
+
+/*=======TRANSFORM 2D=======*/
+
+.container-transform {
+  background-color: teal;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+  /*   transform: translateX(50px); */
+
+  animation: animateX50 3000ms infinite 1000ms;
+  background-color: orange;
+}
+
+.box:nth-child(1)::before {
+  content: 'translateX(50px)';
+}
+
+.box:nth-child(2) {
+  /*   transform: translateY(110px); */
+
+  animation: animateY110 3000ms infinite 1000ms;
+  background-color: #03a9f4;
+}
+
+.box:nth-child(2)::before {
+  content: 'translateY(110px)';
+}
+
+.box:nth-child(3) {
+  /*   transform: translate(-50px, -100px); */
+
+  animation: animateX50Y100 3000ms infinite 1000ms;
+  background-color: palevioletred;
+}
+
+.box:nth-child(3)::before {
+  content: 'translate(-50px, -100px)';
+}
+
+@keyframes animateX50 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateY110 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(110px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateX50Y100 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-50px, -100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/*=======END TRANSFORM 2D=======*/
+
+/*=======Абсолютное позиционирование=======*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9fd;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.position-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.thumb {
+  position: relative;
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.thumb > .label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 8px 16px;
+  border-bottom-left-radius: 4px;
+
+  font-family: sans-serif;
+  font-size: 24px;
+  background-color: #2196f3;
+  color: #fff;
+}
+/*=======END Абсолютное позиционирование=======*/
