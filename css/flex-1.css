@@ -307,10 +307,6 @@ body {
 /*=======END TRANSFORM 2D=======*/
 
 /*=======Абсолютное позиционирование=======*/
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f9f9fd;
 }
@@ -374,14 +370,7 @@ img {
 }
 /*======= END Абсолютное позиционирование с фиксированой иконкой=======*/
 
-/* body {
-  margin: 0;
-  font-family: sans-serif;
-  line-height: 1.5;
-  background-color: #f9f9fd;
-  color: #2a2a2a;
-} */
-
+/*=======Липкие заголовки=======*/
 .section {
   margin-bottom: 20px;
 }
@@ -446,3 +435,4 @@ img {
     #e52e71 20px
   );
 }
+/*=======END Липкие заголовки=======*/
