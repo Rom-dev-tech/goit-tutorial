@@ -564,3 +564,43 @@ h1 {
   transform: translateY(0);
 }
 /*=======END Кнопка с иконкой=======*/
+
+/*=======Нижний псевдоелемент=======*/
+.menu {
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+.menu-link {
+  position: relative;
+
+  padding: 20px 30px;
+  color: teal;
+}
+.menu-link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  /* width: 0%; */
+  height: 5px;
+  border-radius: 4px;
+  background-color: red;
+
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Можно анимировать width */
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+  /* width: 100%; */
+  opacity: 1;
+}
+/*=======END Нижний псевдоелемент=======*/
