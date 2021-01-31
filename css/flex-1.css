@@ -492,3 +492,75 @@ h1 {
   color: #2a2a2a;
 }
 /*=======END Декоративный оверлей=======*/
+
+/*=======Кнопка с переходом=======*/
+.transition {
+  padding: 50px 0;
+}
+.btn-transition {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+
+  /* Полная запись
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 500ms; для задержки перехода */
+
+  /* Можно делеть переход на нескольство свойст. Задаём через запятую (color и т.д..)  */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-transition:hover,
+.btn-transition:focus {
+  background-color: tomato;
+}
+/*=======END Кнопка с переходом=======*/
+
+/*=======Кнопка с иконкой=======*/
+.btn-icon {
+  position: relative;
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow: hidden;
+}
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: orange;
+}
+
+.icon-left {
+  margin-right: 5px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-icon:hover .icon-left,
+.btn-icon:focus .icon-left {
+  transform: translateY(-35px);
+}
+.icon-right {
+  position: absolute;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(calc(-50% + 50px));
+}
+.btn-icon:hover .icon-right,
+.btn-icon:focus .icon-right {
+  transform: translateY(0);
+}
