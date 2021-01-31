@@ -500,7 +500,6 @@ h1 {
 .btn-transition {
   display: inline-flex;
   border: none;
-  margin: 0;
   padding: 10px 30px;
   border-radius: 3px;
   background-color: #008080;
@@ -564,3 +563,4 @@ h1 {
 .btn-icon:focus .icon-right {
   transform: translateY(0);
 }
+/*=======END Кнопка с иконкой=======*/
