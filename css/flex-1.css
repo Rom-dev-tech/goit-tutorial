@@ -37,8 +37,13 @@ a {
   padding: 0 15px;
 }
 
+.section {
+  padding: 50px 0;
+}
+
 /*=======END COMPONENT=======*/
 
+/*=======END MAIN-LINK=======*/
 .main-link {
   color: teal;
   text-decoration: none;
@@ -57,11 +62,11 @@ a {
   color: white;
   outline: none;
 }
+/*=======END MAIN-LINK=======*/
 
 /*=======FLEX-1=======*/
 /* Вариант железно бетонный, но когда нет фона */
 .flex-1 {
-  padding: 50px 0px;
   background-color: teal;
 }
 .main-title {
@@ -155,7 +160,6 @@ body {
 
 /*=======FLEX-CARDS=======*/
 .flex-cards {
-  padding: 50px 0px;
   background-color: var(--page-bg-color);
 }
 
@@ -316,10 +320,6 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.position-container {
-  padding: 50px 0;
 }
 
 .position-container .container {
