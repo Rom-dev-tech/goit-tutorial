@@ -136,6 +136,8 @@ body {
   animation-duration: 1000ms;
   /* animation-iteration-count: 2; */
   animation-delay: 2000ms;
+
+  transition: color 250ms linear;
 }
 .logo:hover,
 .logo:focus {
@@ -162,6 +164,7 @@ body {
 }
 .nav-link {
   color: var(--accent-color);
+  transition: color 250ms linear;
 
   animation-duration: 300ms;
   animation-delay: 3000ms;
@@ -403,6 +406,11 @@ body {
   border-radius: 50%;
   background-color: var(--bgc-color);
   fill: var(--accent-color);
+
+  transition: background-color 250ms linear;
+}
+.social-icon {
+  transition: fill 250ms linear;
 }
 .social-link:hover,
 .social-link:focus {
