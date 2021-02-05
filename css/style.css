@@ -132,6 +132,9 @@ body {
   line-height: 1.14;
 
   margin-right: 70px;
+
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
 }
 .logo:hover,
 .logo:focus {
@@ -214,6 +217,7 @@ body {
 }
 .hero-title {
   color: var(--title-text-color);
+  animation-duration: 2000ms;
 
   font-weight: 400;
   font-size: 56px;
