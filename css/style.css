@@ -297,8 +297,8 @@ body {
 .examples .section-subtitle {
   margin-bottom: 24px;
 }
-.examples-item.dark-team {
-  background-color: #ccc;
+.wrapper.dark-team {
+  background-color: var(--bgc-color);
 }
 /*=======END EXAMPLES=======*/
 
