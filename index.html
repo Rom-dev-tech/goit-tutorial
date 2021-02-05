@@ -55,7 +55,7 @@
       <section class="hero">
          <div class="container">
             <h1 class="hero-title animate__backInDown">The largest community of photo enthusiasts</h1>
-            <button class="button primary animate__pulse" type="button">Join Today</button>
+            <button class="button primary animate__pulse" data-modal-open type="button">Join Today</button>
          </div>
       </section>
       <!-- Quotes -->
@@ -299,5 +299,13 @@
 
       </div>
    </footer>
+
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button type="button" class="modal-close-btn" data-modal-close>x</button>
+      </div>
+   </div>
+
+   <script src="./js/modal.js"></script>
 </body>
 </html>
