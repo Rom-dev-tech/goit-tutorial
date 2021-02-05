@@ -277,28 +277,28 @@ body {
 /*=======END QUOTES=======*/
 
 /*=======EXAMPLES=======*/
-.examples {
-  padding-top: 80px;
-
-  background-color: var(--bgc-color);
-}
 .examples-item {
   display: flex;
   align-items: center;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
-.examples-item.dark-team {
-  padding: 80px 0px;
+.flex-text {
+  padding-left: 40px;
 }
-.examples-item:nth-child(even) {
-  /* background-color: var(--bgc-color); */
+.examples-item.dark-team .examples-img {
+  transform: translate(100%);
 }
-.examples-img {
-  margin-right: 84px;
-  max-width: 100%;
+.examples-item.dark-team .flex-text {
+  transform: translate(-100%);
+  padding-right: 40px;
+  padding-left: 0px;
 }
 .examples .section-subtitle {
   margin-bottom: 24px;
+}
+.examples-item.dark-team {
+  background-color: #ccc;
 }
 /*=======END EXAMPLES=======*/
 
