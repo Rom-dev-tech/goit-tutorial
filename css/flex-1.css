@@ -598,17 +598,17 @@ h1 {
   border-radius: 5px;
   background-color: red;
 
-  opacity: 0;
+  /* opacity: 0; */
 
-  /* transform: scaleX(0); */
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Можно анимировать width и transform  */
 }
 
 .menu-link:hover::after,
 .menu-link:focus::after {
   /* width: 100%; */
-  opacity: 1;
-  /* transform: scaleX(1); */
+  /* opacity: 1; */
+  transform: scaleX(1);
 }
 /*=======END Нижний псевдоелемент=======*/
