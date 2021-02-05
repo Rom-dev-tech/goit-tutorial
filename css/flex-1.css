@@ -45,7 +45,7 @@ a {
 
 /*=======END MAIN-LINK=======*/
 .main-link {
-  color: teal;
+  color: var(--page-bg-secondary-color);
   text-decoration: none;
   text-align: center;
 
@@ -69,7 +69,7 @@ a {
 .flex-1 {
   background-color: teal;
 }
-.main-title {
+.title {
   text-align: center;
   margin-bottom: 50px;
   color: #ffffff;
@@ -146,6 +146,7 @@ a {
 /*=======Переменные для карточек=======*/
 :root {
   --page-bg-color: #cccccc;
+  --page-bg-secondary-color: teal;
   --primary-text-color: #212121;
   --card-set-gap: 20px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -191,8 +192,7 @@ body {
 .card-content {
   padding: 10px;
 }
-.flex-card-title {
-  padding-bottom: 50px;
+.dark-teame {
   text-align: center;
   color: teal;
   font-style: italic;
@@ -213,8 +213,7 @@ body {
 /*=======TRANSFORM 2D=======*/
 
 .container-transform {
-  padding-top: 40px;
-  background-color: teal;
+  background-color: var(--page-bg-secondary-color);
 
   min-height: 100vh;
   display: flex;
@@ -381,10 +380,6 @@ body {
 /*======= END Абсолютное позиционирование с фиксированой иконкой=======*/
 
 /*=======Липкие заголовки=======*/
-.section {
-  margin-bottom: 20px;
-}
-
 .section-title {
   position: sticky;
   top: -1px;
@@ -504,8 +499,8 @@ h1 {
 /*=======END Декоративный оверлей=======*/
 
 /*=======Кнопка с переходом=======*/
-.transition {
-  padding: 50px 0;
+.transition .container {
+  text-align: center;
 }
 .btn-transition {
   display: inline-flex;
@@ -578,6 +573,7 @@ h1 {
 /*=======Нижний псевдоелемент=======*/
 .menu {
   display: flex;
+  justify-content: space-between;
 }
 .menu-item:not(:last-child) {
   margin-right: 20px;
