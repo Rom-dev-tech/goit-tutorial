@@ -134,7 +134,8 @@ body {
   margin-right: 70px;
 
   animation-duration: 1000ms;
-  animation-iteration-count: 2;
+  /* animation-iteration-count: 2; */
+  animation-delay: 2000ms;
 }
 .logo:hover,
 .logo:focus {
@@ -162,6 +163,9 @@ body {
 .nav-link {
   color: var(--accent-color);
 
+  animation-duration: 300ms;
+  animation-delay: 3000ms;
+
   font-size: 15px;
   line-height: 1.2px;
   font-weight: 500;
@@ -187,6 +191,11 @@ body {
 }
 .auth-item:not(:last-child) {
   margin-right: 12px;
+}
+.header .button.secondary,
+.header .button.primary {
+  animation-duration: 1000ms;
+  animation-delay: 3300ms;
 }
 /*=======END HEADER=======*/
 
@@ -217,7 +226,7 @@ body {
 }
 .hero-title {
   color: var(--title-text-color);
-  animation-duration: 2000ms;
+  animation-duration: 1000ms;
 
   font-weight: 400;
   font-size: 56px;
@@ -228,6 +237,9 @@ body {
 .hero .button {
   min-width: 192px;
   height: 52px;
+
+  animation-duration: 1000ms;
+  animation-delay: 1000ms;
 }
 /*=======END HERO=======*/
 
