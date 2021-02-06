@@ -425,6 +425,10 @@ body {
   line-height: 1.6;
   color: var(--title-text-color);
 }
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
 .top-side {
   display: flex;
   justify-content: space-between;
