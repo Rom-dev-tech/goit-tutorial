@@ -263,83 +263,135 @@
       </section>
 
       <!--? Формы-->
-      <section class="section">
+      <section class="section section-form">
          <div class="container">
-            <form autocomplete="off">
-               <label>
-                  Имя
-                  <input type="text" name="name" />
-               </label>
-   <br>
-               <label>
-                  Телефон
-                  <input type="tel" name="tel" />
-               </label>
-   <br>
-               <label>
-                  Почта
-                  <input type="email" name="mail" autocomplete="on" />
-               </label>
-   <br>
-               <div role="group">
-                  <label >
-                     HTML
-                     <input type="checkbox" name="topic" value="HTML" />
-                  </label>
-      
-                  <label >
-                     CSS
-                     <input type="checkbox" name="topic" value="CSS" checked />
-                  </label>
-      
-                  <label >
-                     JavaScript
-                     <input type="checkbox" name="topic" value="js" checked />
+            <h1 class="title dark-team">Форма</h1>
+
+            <form class="form" autocomplete="off">
+               
+               <div class="form-field">
+                  <label class="form-label">
+                     Имя
+                     <input class="form-input"
+                     type="text" 
+                     name="name" 
+                     placeholder="Иван Иванович" 
+                     />
                   </label>
                </div>
-   <br>
-               <div role="group">
-                  <label>
-                     Junior
-                     <input type="radio" name="experience" value="junior" />
+
+               <div class="form-field">
+                  <label class="form-label">
+                     Телефон
+                     <input class="form-input"
+                     type="tel" 
+                     name="tel" 
+                     placeholder="+38" 
+                     />
                   </label>
-   
-                  <label>
-                     Middle
-                     <input type="radio" name="experience" value="middle" checked />
+               </div>
+
+               <div class="form-field">
+                  <label class="form-label">
+                     Почта
+                     <input class="form-input"
+                     type="email" 
+                     name="mail" 
+                     autocomplete="on" 
+                     placeholder="Malibu@gmail.com" 
+                     />
                   </label>
-   
-                  <label>
-                     Senior
-                     <input type="radio" name="experience" value="senior" />
-                  </label>
-<br>
-                  <label>
-                     Дата и время доклада
-                     <input 
-                     type="datetime-local" 
-                     name="data"
-                     min="2021-02-08T12:00"
-                     max="2021-02-20T16:00" />
-                  </label>
-<br>
-                  <label>
-                     Загрузите файл
-                     <input type="file" name="file">
-                  </label>
-<br>
-                  <label>
-                     Оставить коментарий
-                     <textarea name="coment" rows="8" autofocus></textarea>
-                  </label>
-<br>
-                  <label>
-                     <input type="checkbox" name="chect" />
-                     Соглашаюсь с условиями политики
-                  </label>
-<br>
+               </div>
+
+               <div role="group" class="group">
+                  <h2 class="group-title">Тема доклада</h2>
+
+                  <ul class="topic-options list">
+                     <li class="group-item">
+                        <label class="group-label" >
+                           <input type="checkbox" name="topic" value="HTML" />
+                           HTML
+                        </label>
+                     </li>
+
+                     <li>
+                        <label class="group-label">
+                           <input type="checkbox" name="topic" value="js" checked />
+                           JavaScript
+                        </label>
+                     </li>
+
+                     <li>
+                        <label class="group-label">
+                           <input type="checkbox" name="topic" value="js" checked />
+                           JavaScript
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="group" role="group">
+                  <h2 class="group-title">Уровен подготовки</h2>
+
+                  <ul class="expiriance-option list">
+                     <li class="expiriance-item">
+                        <label class="expiriance-label">
+                           <input type="radio" name="experience" value="junior" />
+                           Junior
+                        </label>
+                     </li>
+
+                     <li class="expiriance-item">
+                        <label class="expiriance-label">
+                           <input type="radio" name="experience" value="middle" checked />
+                           Middle
+                        </label>
+                     </li>
+
+                     <li class="expiriance-item">
+                        <label class="expiriance-label">
+                           <input type="radio" name="experience" value="senior" />
+                           Senior
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+
+                  <div class="form-field">
+                     <label class="form-label">
+                        Дата и время доклада
+                        <input class="form-input" 
+                        type="datetime-local" 
+                        name="data"
+                        min="2021-02-08T12:00"
+                        max="2021-02-20T16:00" />
+                     </label>
+                  </div>
+
+                  <div class="form-field">
+                     <label class="form-label">
+                        Загрузите файл
+                        <input class="form-label"
+                        type="file" 
+                        name="file">
+                     </label>
+                  </div>
+
+                  <div class="form-field">
+                     <label class="form-label">
+                        Оставить коментарий
+                        <textarea name="coment" rows="8" autofocus placeholder="Коментарий"></textarea>
+                     </label>
+                  </div>
+
+                  <div class="form-field">
+                     <label>
+                        <input type="checkbox" name="chect" />
+                        Соглашаюсь с условиями политики
+                     </label>
+                  </div>
+
                   <button type="button" disabled>Отпраить заявку</button>
-               </div>
             </form>
          </div>
       </section>

@@ -613,6 +613,74 @@ h1 {
 }
 /*=======END Нижний псевдоелемент=======*/
 
+/*=======FORM=======*/
 textarea {
   resize: none;
+  padding: 10px;
+  border-radius: 4px;
 }
+
+.section-form {
+  background-color: teal;
+}
+
+.form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.form-field {
+  margin-bottom: 20px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+/* Можно поставить один на один и флексом и через ширину */
+/* .form-field input {
+  width: 100%;
+} */
+.form-input {
+  padding: 10px 20px;
+  margin-top: 5px;
+  border: 1px solid #2a2a2a;
+  border-radius: 3px;
+}
+.form-input::placeholder {
+  color: #2a2a2a2a;
+}
+.group {
+  margin-bottom: 20px;
+}
+.group-title {
+  margin-bottom: 20px;
+}
+.topic-options input[type='checkbox'] {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.group-label {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.expiriance-option {
+  display: flex;
+}
+.expiriance-item {
+  margin-right: 20px;
+}
+.expiriance-label {
+  font-size: 25px;
+}
+.expiriance-item input {
+  width: 20px;
+  height: 20px;
+}
+.file-input {
+  margin-top: 5px;
+}
+/*=======END FORM=======*/
