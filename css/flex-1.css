@@ -612,3 +612,7 @@ h1 {
   transform: scaleX(1);
 }
 /*=======END Нижний псевдоелемент=======*/
+
+textarea {
+  resize: none;
+}
