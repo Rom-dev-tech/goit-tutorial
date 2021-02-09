@@ -641,6 +641,8 @@ textarea {
   position: absolute;
   top: 50%;
   left: 40px;
+
+  transition: transform 250ms linear, color 250ms linear;
   transform: translateY(-50%);
 }
 
@@ -660,6 +662,7 @@ textarea {
   top: 50%;
   left: 10px;
 
+  transition: background-color 250ms linear;
   transform: translateY(-50%);
 
   display: inline-block;
@@ -673,6 +676,7 @@ textarea {
 .form-field:focus-within .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-45px);
+  color: yellowgreen;
 }
 
 .group {
