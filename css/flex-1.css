@@ -662,21 +662,18 @@ textarea {
   top: 50%;
   left: 10px;
 
-  transition: background-color 250ms linear;
+  transition: fill 250ms linear;
   transform: translateY(-50%);
 
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
 }
 .form-field:focus-within .icon {
-  background-color: yellowgreen;
+  fill: teal;
 }
 .form-field:focus-within .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-45px);
-  color: yellowgreen;
+  color: teal;
 }
 
 .group {
