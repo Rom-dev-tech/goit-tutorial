@@ -700,7 +700,7 @@ textarea {
   width: 1px !important;
   overflow: hidden;
 }
-.checkbox-label {
+.checkbox-field {
   font-size: 16px;
   display: inline-flex;
   align-items: center;
@@ -719,6 +719,12 @@ textarea {
   background-origin: border-box;
   background-size: contain;
   border-color: transparent;
+}
+.checkbox-label {
+  transition: transform 250ms linear;
+}
+.checkbox-input:checked ~ .checkbox-label {
+  transform: translateX(10px);
 }
 .expiriance-option {
   display: flex;
