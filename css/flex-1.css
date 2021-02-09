@@ -632,25 +632,49 @@ textarea {
   background-color: #ffffff;
 }
 .form-field {
-  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
 }
+
 .form-label {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
 }
-/* Можно поставить один на один и флексом и через ширину */
-/* .form-field input {
-  width: 100%;
-} */
+
 .form-input {
+  width: 100%;
   padding: 10px 20px;
   margin-top: 5px;
   border: 1px solid #2a2a2a;
   border-radius: 3px;
+  padding-left: 40px;
 }
 .form-input::placeholder {
   color: #2a2a2a2a;
 }
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+.form-field:focus-within .icon {
+  background-color: yellowgreen;
+}
+.form-field:focus-within .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-45px);
+}
+
 .group {
   margin-bottom: 20px;
 }
