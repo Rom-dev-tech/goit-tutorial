@@ -627,7 +627,7 @@ textarea {
 .form {
   width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
 }
@@ -781,7 +781,6 @@ textarea {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 .submit-btn {
   margin-right: 10px;
