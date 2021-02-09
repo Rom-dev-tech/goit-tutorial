@@ -708,19 +708,23 @@ textarea {
   width: 20px;
   height: 20px;
 }
-.file-input {
-  margin-top: 5px;
+.data-field,
+.file-field,
+.coment-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-
 .date {
-  padding: 20px 40px;
-  margin-top: 5px;
-
-  font-size: 30px;
-
-  border: 1px solid teal;
-  border-width: 5px;
-  border-radius: 5px;
+  border: 1px solid tomato;
+  border-radius: 6px;
+  color: inherit;
+  padding: 15px;
 }
-
+.data-label,
+.file-label,
+.coment-label {
+  margin-bottom: 10px;
+  font-style: italic;
+}
 /*=======END FORM=======*/

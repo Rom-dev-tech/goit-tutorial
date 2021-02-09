@@ -268,7 +268,7 @@
             <h1 class="title dark-team">Форма</h1>
 
             <form class="form" autocomplete="off">
-               
+               <!--Name-->
                   <label class="form-field">
                      <input class="form-input"
                      type="text" 
@@ -300,7 +300,7 @@
                      <span class="icon"></span>
                   </label>
 
-
+                  <!--Checkbox-->
                <div role="group" class="group">
                   <h2 class="group-title">Тема доклада</h2>
 
@@ -312,14 +312,14 @@
                         </label>
                      </li>
 
-                     <li>
+                     <li class="group-item">
                         <label class="group-label">
-                           <input type="checkbox" name="topic" value="js" checked />
-                           JavaScript
+                           <input type="checkbox" name="topic" value="css" checked />
+                           CSS
                         </label>
                      </li>
 
-                     <li>
+                     <li class="group-item">
                         <label class="group-label">
                            <input type="checkbox" name="topic" value="js" checked />
                            JavaScript
@@ -328,6 +328,7 @@
                   </ul>
                </div>
 
+               <!--Radio button-->
                <div class="group" role="group">
                   <h2 class="group-title">Уровен подготовки</h2>
 
@@ -355,39 +356,35 @@
                   </ul>
                </div>
 
-                  <div class="form-field">
-                     <label class="form-label">
-                        Дата и время доклада
+               <!--Date-->
+                     <label class="data-field">
+                        <span class="data-label">Дата и время доклада</span>
                         <input class="date" 
                         type="datetime-local" 
                         name="data"
                         min="2021-02-08T12:00"
                         max="2021-02-20T16:00" />
                      </label>
-                  </div>
 
-                  <div class="form-field">
-                     <label class="form-label">
-                        Загрузите файл
-                        <input class="form-label"
+                     <!--File-->
+                     <label class="file-field">
+                        <span class="file-label">Загрузите файл</span>
+                        <input class="file-input"
                         type="file" 
                         name="file">
                      </label>
-                  </div>
 
-                  <div class="form-field">
-                     <label class="form-label">
-                        Оставить коментарий
+                     <!--Coment-->
+                     <label class="coment-field">
+                        <span class="coment-label">Оставить коментарий</span>
                         <textarea name="coment" rows="8" autofocus placeholder="Коментарий"></textarea>
                      </label>
-                  </div>
 
-                  <div class="form-field">
-                     <label>
+                     <!--Policy-->
+                     <label class="form-field">
                         <input type="checkbox" name="chect" />
-                        Соглашаюсь с условиями политики
+                        <span>Соглашаюсь с условиями политики</span>
                      </label>
-                  </div>
 
                   <button type="button" disabled>Отпраить заявку</button>
             </form>
