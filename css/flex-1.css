@@ -683,4 +683,16 @@ textarea {
 .file-input {
   margin-top: 5px;
 }
+
+.date {
+  padding: 20px 40px;
+  margin-top: 5px;
+
+  font-size: 30px;
+
+  border: 1px solid teal;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
 /*=======END FORM=======*/
