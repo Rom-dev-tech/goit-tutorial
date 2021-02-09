@@ -273,28 +273,34 @@
                      <input class="form-input"
                      type="text" 
                      name="name" 
-                     placeholder=" " 
+                     placeholder=" "
+                     required minlength="2"
                      />
                      <span class="form-label">Имя</span>
                      <span class="icon"></span>
                   </label>
 
+                  <!--Phone-->
                   <label class="form-field" >
                      <input class="form-input"
                      type="tel" 
                      name="tel" 
-                     placeholder=" " 
+                     placeholder=" "
+                     required
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                      />
                      <span class="form-label">Телефон</span>
                      <span class="icon"></span>
                   </label>
 
+                  <!--Mail-->
                   <label class="form-field">
                      <input class="form-input"
                      type="email" 
                      name="mail" 
                      autocomplete="on" 
-                     placeholder=" " 
+                     placeholder=" "
+                     required
                      />
                      <span class="form-label">Почта</span>
                      <span class="icon"></span>
@@ -337,22 +343,22 @@
 
                   <ul class="expiriance-option list">
                      <li class="expiriance-item">
-                        <label class="expiriance-label">
-                           <input type="radio" name="experience" value="junior" />
-                           Junior
+                        <label class="expiriance-field">
+                           <input class="expiriance-input" type="radio" name="experience" value="junior" />
+                           <span class="expiriance-label">Junior</span>
                         </label>
                      </li>
 
                      <li class="expiriance-item">
                         <label class="expiriance-label">
-                           <input type="radio" name="experience" value="middle" checked />
+                           <input class="expiriance-input" type="radio" name="experience" value="middle" checked />
                            Middle
                         </label>
                      </li>
 
                      <li class="expiriance-item">
                         <label class="expiriance-label">
-                           <input type="radio" name="experience" value="senior" />
+                           <input class="expiriance-input" type="radio" name="experience" value="senior" />
                            Senior
                         </label>
                      </li>
@@ -377,6 +383,22 @@
                         name="file">
                      </label>
 
+                     <!--Select-->
+                     <h2 class="contact-form-title">От куда ты</h2>
+                  <select class="select" name="user-city">
+                        <optgroup label="Ukraine">
+                           <option value="Kyiv">Kyiv</option>
+                           <option value="Kharkiv">Kharkiv</option>
+                           <option value="Odessa">Odessa</option>
+                        </optgroup>
+
+                        <optgroup label="Poland">
+                           <option value="Krakow">Krakow</option>
+                           <option value="Warsaw">Warsaw</option>
+                           <option value="Gdansk">Gdansk</option>
+                        </optgroup>
+                  </select>
+
                      <!--Coment-->
                      <label class="coment-field">
                         <span class="coment-label">Оставить коментарий</span>
@@ -389,7 +411,10 @@
                         <span>Соглашаюсь с условиями политики</span>
                      </label>
 
-                  <button type="button" disabled>Отпраить заявку</button>
+                  <div class="btn-container">
+                     <button class="submit-btn" type="submit">Отпраить заявку</button>
+                     <button class="reset-btn" type="reset">Очистить</button>
+                  </div>
             </form>
          </div>
       </section>

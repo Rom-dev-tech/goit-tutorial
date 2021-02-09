@@ -690,6 +690,8 @@ textarea {
   height: 40px;
   margin-right: 10px;
 } */
+
+/* Checkbox */
 .checkbox-input {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -712,13 +714,24 @@ textarea {
   border: 2px solid #000000;
   border-radius: 4px;
   margin-right: 10px;
+
+  transition: all 250ms linear;
 }
 .checkbox-input:checked + .checkbox-icon {
   background-image: url(../images/check.svg);
-  background-color: rgb(9, 62, 236);
+  background-color: #188ce8;
   background-origin: border-box;
   background-size: contain;
   border-color: transparent;
+}
+.checkbox-input:focus + .checkbox-icon {
+  box-shadow: 0 0 0 0.1em #188ce8, 0 0 0 0.2em teal;
+}
+.checkbox-input:disabled + .checkbox-icon {
+  border: 2px solid #ccc;
+}
+.checkbox-input:checked:disabled + .checkbox-icon {
+  background-color: #ccc;
 }
 .checkbox-label {
   transition: transform 250ms linear;
@@ -726,6 +739,8 @@ textarea {
 .checkbox-input:checked ~ .checkbox-label {
   transform: translateX(10px);
 }
+
+/* radio */
 .expiriance-option {
   display: flex;
 }
@@ -735,10 +750,12 @@ textarea {
 .expiriance-label {
   font-size: 25px;
 }
-.expiriance-item input {
+.expiriance-input {
   width: 20px;
   height: 20px;
 }
+
+/* data and textarea */
 .data-field,
 .file-field,
 .coment-field {
@@ -757,5 +774,19 @@ textarea {
 .coment-label {
   margin-bottom: 10px;
   font-style: italic;
+}
+.contact-form-title {
+  margin-bottom: 10px;
+}
+.select {
+  margin-bottom: 20px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.submit-btn {
+  margin-right: 10px;
 }
 /*=======END FORM=======*/
