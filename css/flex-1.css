@@ -653,6 +653,11 @@ textarea {
   border: 1px solid #2a2a2a;
   border-radius: 3px;
   padding-left: 40px;
+  transition: 250ms linear;
+}
+.form-input:focus-within {
+  border: 1px solid teal;
+  outline: none;
 }
 .form-input::placeholder {
   color: #2a2a2a2a;
